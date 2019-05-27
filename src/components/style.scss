@@ -1,0 +1,132 @@
+// Importing variables
+@import "../../node_modules/bulma/sass/utilities/initial-variables.sass";
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap');
+$primary-color: #2980b9;
+$secondary-color: #6dd5fa;
+$navbar-breakpoint: $tablet;
+$family-sans-serif: "Rubik", sans-serif;
+$navbar-background-color: none;
+$navbar-item-hover-background-color:  #1AE4DA;
+
+// Importing Bulma from node_modules
+@import "~bulma/bulma.sass";
+.navtext{
+	font-family: "Rubik";
+    font-weight: 500;
+	letter-spacing: -0.05em;
+}
+.socialButton{
+	width: 50px;
+	height: 50px;
+	background: #FFFFFF;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+	border-radius: 35px;
+}
+.navbarMenuNonBoxShadow{
+  box-shadow: none;
+}
+.iconn{
+  color: #747579;
+  font-size: 2rem;
+}
+.iconn:hover{
+  color: #5D7DE9;
+  font-size: 2rem;
+}
+.gradientBg {
+  display: flex;
+  width: auto;
+  min-height: 911px;
+  background: linear-gradient(322.65deg, #6078ea -3.15%, #17ead9 91.36%);
+}
+.buttonNav {
+  font-size: 18px;
+  padding: 9px 51px;
+  color: #5d7de9;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.16);
+  background: #ffffff;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  padding: 1.5rem 1.5rem;
+  line-height: 1.5rem;
+  a {
+    border-bottom: 1px solid;
+    color: black;
+  }
+  a:hover {
+    color: $secondary-color;
+  }
+}
+
+.navbarTrans {
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0);
+}
+
+.navbarScroll {
+    background-color: rgba(96,184,234, 0.87);
+    backdrop-filter: blur(20px);
+}
+.bgAchievements{
+  background: #17EAD9;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.1);
+  max-width: 1190px;
+  margin-right: 7em;
+  margin-left: 1.5em;
+}
+.adaptiveText{
+  width: 21px;
+  text-align: center;
+  word-break: break-word;
+  line-height: 124%;
+  letter-spacing: 0.14em; 
+  font-size: 20px;
+  
+}
+.adaptiveSection{
+  max-width: 1440px;
+  margin: auto;
+  margin-top: -4em;
+  position: relative;
+  z-index: 20;
+}
+//mixins
+
+@include mobile(){
+  .foto{
+    text-align: center;
+    padding: 0 3rem;
+
+  }
+  .gradientBg{
+    min-height: 300px;
+    margin-top: -6em;
+  }
+  .bgAchievements{
+    margin-right: 1em;
+  }
+  .adaptiveText{
+    width: auto;
+    color: #fff;
+  }
+  .adaptiveSection{
+    margin-top: -14em
+  }
+}
+
+
