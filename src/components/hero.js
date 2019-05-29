@@ -4,7 +4,7 @@ import { FaGithub, FaDribbble, FaLinkedin } from "react-icons/fa";
 import rect1 from "../images/rect1.svg";
 import rect2 from "../images/rect2.svg";
 import rect3 from "../images/rect3.svg";
-import foto from "../images/foto.svg";
+import foto from "../images/foto.jpg";
 import Navbar from "./navbar";
 import { StaticQuery } from "gatsby";
 
