@@ -1,7 +1,4 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
-
-import "./style.scss";
 import logo from "../images/logo.svg";
 import logoScroll from "../images/logoScroll.svg";
 
@@ -47,7 +44,7 @@ class Navbar extends React.Component {
             : `level navbar is-fixed-top is-mobile ${this.state.hasScrolled ? `navbarTrans navbarScroll`:``}`
         }
         style={{
-          maxWidth: `1440px`,
+          maxWidth: `1520px`,
           margin: `auto`,
           padding: `1rem 2rem`
         }}
@@ -69,6 +66,7 @@ class Navbar extends React.Component {
             style={{
                 color: `${this.state.hasScrolled ? `#ffffff` : `#000000`}`
             }}
+            href="/#achievements"
           >
             Achievements
           </a>
@@ -86,7 +84,7 @@ class Navbar extends React.Component {
                 className="columns is-mobile is-centered is-marginless"
                 style={{padding: `0.2rem 0rem` }}
               >
-                <p
+                <a
                   className="buttonNav"
                   style={{
                     fontFamily: `Rubik`,
@@ -94,9 +92,10 @@ class Navbar extends React.Component {
                     letterSpacing: `-0.05em`,
                     color: `#5D7DE9`
                   }}
+                  href="mailto:dimasna96@gmail.com"
                 >
                   Hire Me!
-                </p>
+                </a>
               </div>
             </div>
           </div>
@@ -122,37 +121,6 @@ class Navbar extends React.Component {
   }
 }
 
-// const Navbar = () => (
-// 	<div className="hero-head is-hidden-mobile">
-// 		<nav className="navbar">
-// 			<div className="container">
-// 				<div className="navbar-brand">
-// 					<a
-// 						className="navbar-item"
-// 						href="https://github.com/amandeepmittal/gatsby-bulma-quickstart"
-// 					>
-// 						<img src={gatsbyLogo} alt="Logo-1" />
-// 						<img src={bulmaLogo} alt="Logo-2" />
-// 					</a>
-// 				</div>
-// 				<div id="navbarMenuHeroA" className="navbar-menu">
-// 					<div className="navbar-end">
-// 						<span className="navbar-item">
-// 							<a
-// 								className="button is-danger is-inverted"
-// 								href="https://github.com/amandeepmittal/gatsby-bulma-quickstart"
-// 							>
-// 								<span className="icon">
-// 									<FaGithub size="fa-2x" />
-// 								</span>
-// 								<span>Download</span>
-// 							</a>
-// 						</span>
-// 					</div>
-// 				</div>
-// 			</div>
-// 		</nav>
-// 	</div>
-// );
+
 
 export default Navbar;
