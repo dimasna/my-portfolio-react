@@ -105,6 +105,31 @@ $navbar-item-hover-background-color:  #1AE4DA;
   position: relative;
   z-index: 20;
 }
+.achieveCard{
+  display: flex;
+  height: 205px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  p{
+    color: #FFFFFF;
+    width: 156px;
+  }
+}
+#achieveCard-hide{
+  opacity: 0;
+}
+.cardWrapper{
+  display: flex;
+  position: absolute;
+  transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  
+  .achieveCard{
+    flex: 1;
+    min-width: 203px;
+    margin: 3em 1.5em;
+  }
+}
 //mixins
 
 @include mobile(){
@@ -128,5 +153,6 @@ $navbar-item-hover-background-color:  #1AE4DA;
     margin-top: -14em
   }
 }
+
 
 

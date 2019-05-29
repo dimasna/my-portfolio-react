@@ -7,7 +7,7 @@ const data = {
         },
         {
             "index": 1,
-            "title": "1st Winner App Ideationr",
+            "title": "1st Winner App Ideation",
             "img": "../images/rect3.svg"
         },
         {
@@ -22,6 +22,21 @@ const data = {
         },
         {
             "index": 4,
+            "title": "3rd Winner PLN Paper Competition ",
+            "img": "../images/rect3.svg"
+        },
+        {
+            "index": 5,
+            "title": "3rd Winner PLN Paper Competition ",
+            "img": "../images/rect3.svg"
+        },
+        {
+            "index": 6,
+            "title": "3rd Winner PLN Paper Competition ",
+            "img": "../images/rect3.svg"
+        },
+        {
+            "index": 7,
             "title": "3rd Winner PLN Paper Competition ",
             "img": "../images/rect3.svg"
         }

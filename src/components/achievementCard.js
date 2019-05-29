@@ -1,19 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { FaCreditCard } from "react-icons/fa";
 
-const achievementCard = ({dataAchievement}) => {
+
+const achievementCard = ({dataAchievement,rightCard}) => {
     const {index, title, img} = dataAchievement;
-    return(
-        <div id={`achieveCard-${index}`} className="achieveCard"
-            style={{background: `linear-gradient(0deg, rgba(93, 125, 233, 0.65), rgba(93, 125, 233, 0.65)), url(${img})`}}
-        >
-            <p>{title}</p>
-        </div>
-    )
+    
+        return(
+        
+            <div id={`achieveCard-${index >= rightCard? `hide` : index}`} className="achieveCard"
+                style={{background: `linear-gradient(0deg, rgba(93, 125, 233, 0.65), rgba(93, 125, 233, 0.65)), url(${img})`}}
+            >
+                <p>{title}</p>
+            </div>
+        )
+     
+    
 }
 
-FaCreditCard.propTypes ={
+achievementCard.propTypes ={
     property: PropTypes.object.isRequired
 }
 

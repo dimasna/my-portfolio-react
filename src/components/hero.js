@@ -96,7 +96,7 @@ class Hero extends React.Component{
               marginLeft: `auto`,
               paddingRight: `5rem`,
               marginBottom: `16.5rem`,
-              zIndex: `20`
+              zIndex: `100`
             }}
           >
             <a className="section column" style={{ padding: `2rem 1.5rem` }}>

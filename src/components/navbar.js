@@ -65,7 +65,7 @@ class Navbar extends React.Component {
           }
         >
           <a
-            class="navbar-item navtext"
+            className="navbar-item navtext"
             style={{
                 color: `${this.state.hasScrolled ? `#ffffff` : `#000000`}`
             }}
@@ -73,7 +73,7 @@ class Navbar extends React.Component {
             Achievements
           </a>
           <a
-            class="navbar-item navtext"
+            className="navbar-item navtext"
             style={{
 				color: `${this.state.hasScrolled ? `#ffffff` : `#000000`}`
             }}
